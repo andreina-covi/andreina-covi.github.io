@@ -21,7 +21,7 @@ body input[type="text"],body input[type="submit"],body textarea,body input[type=
 }
 /*------ HEADERBG STARTS---------*/
 .headerbg {
-	background:rgba(6, 18, 25, 0.94);
+	background:rgba(0,0,0, 0.94);
 	min-height:896px;
 	/*height: 100%;
 	width:100%;*/
