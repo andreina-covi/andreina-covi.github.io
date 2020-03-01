@@ -6,6 +6,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Resume Website Template | Home :: w3layouts</title>
 	<script src="js/jquery.min.js"> </script>
@@ -13,209 +14,215 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<script
+		type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 	<!---- start-smoth-scrolling---->
-		<script type="text/javascript" src="js/move-top.js"></script>
-		<script type="text/javascript" src="js/easing.js"></script>
-		<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-				});
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
 			});
-		</script>
- 	<!---- start-smoth-scrolling---->
+		});
+	</script>
+	<!---- start-smoth-scrolling---->
 </head>
+
 <body>
-<!------headerbg starts--------->
- <div id="top-top" class="headerbg">
-	 <!------header starts--------->
-	   <div class="header">
-		 <!------container starts--------->
-			  <div class="container">
-				   <div class="logo">
-						<a href="#">Resume</a>
-				   </div>
-				  <!------Navigation starts--------->
-				  <div class="nav">
-					 <ul>
-						 <li><a class="scroll" href="#interest">Interest</a></li>
-                         <li><a class="scroll" href="#experience">Experience</a></li>
-                         <!--li><a class="scroll" href="#skills">Skills</a></li-->
-						 <li><a class="scroll" href="#contact">Contact</a></li>
-					 </ul>
-				 </div>
-				  <!------Navigation ends-------->
-					<div class="clear"></div>
-			  </div>
-		 <!------container ends--------->
-	   </div>
-	 <!------header ends--------->
-	 <!------Banner starts--------->
-	   <div class="banner">
-	      <div class="container">
-		     <div class="banner-info">
-					<div class="bannerlogo">
-					  <img src="images/photo4.png">
-			      </div>
-			      <div class="bannerhead">
-				      <h2><span>Andreina Cota Vidaurre</span></h2>
-				      <h3>Informatic Engineer</h3>
-				      <p>I'm a developer who worked in different projects either in sales system, tools development and
-						  research. I like challenging working environment that encourages me to improve and learn new
-						  and necessary skills.</p>
-					  <a class="downarrow scroll" href="#about"><span> </span></a>
-			      </div>
+	<!------Navigation starts--------->
+	<div class="wrap-navigator">
+		<div class="logo">
+			<a href="#">Resume</a>
+		</div>
+		<div class="nav">
+			<ul>
+				<li><a class="scroll" href="#interest">Interest</a></li>
+				<li><a class="scroll" href="#experience">Experience</a></li>
+				<!--li><a class="scroll" href="#skills">Skills</a></li-->
+				<li><a class="scroll" href="#contact">Contact</a></li>
+			</ul>
+		</div>
+	</div>
 
-			 </div>
-			 <div class="clear"></div>
-		  </div>
-	  </div>
-	  <!------Banner ends-------->
- </div>
- <!------Headerbg ends-------->
- <!------Content starts--------->
- <div class="content">
-	 <!------About starts--------->
-	   <div id="about" class="about">
-		 <div class="container">
-			   <div class="header-section text-center">
-				  <h2><span> </span>EXPERIENCE<span> </span></h2>
-			   </div>
-			 	<span><p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-					 lorem quis bibendum auctor,nisi elit consequat ipsum,nec sagittis sem nibh id elit.Duis.</p></span>
-					 
-			  <div class="years">
-				<h4><b>2018-Present</b></h4>
-				 <span><h4>Research Software Engineer at <b> <a id="linkSemantics" href="http://semantics.bo/">Semantics S.R.L. </a></b></h4></span>
-				 <p><i>Responsible for projects like: SGraphQL (open source Smalltalk GraphQL implementation) and
-					 SmallTestSuiteGenerator (test generation tool).</i></p>
-			  </div>
-				
-			  <div class="years">
-				 <h4><b>2017-2018</b></h4>
-				 <span><h4>Software Engineer at <b><a href="https://pilandina.com.bo/">PIL Andina S.A. </a></b></h4></span>
-				 <p><i>Part of the group responsible for development, maintenance and support the sales and distribution
-					 system.</i></p>
-			  </div>
-				 <a class="arrow scroll" href="#interest"><span> </span></a>
-		  </div>
-	  </div>
-	 <!------About Ends--------->
+	<!------headerbg starts--------->
+	<div id="top-top" class="headerbg">
+		<div class="container">
+			<div class="completeNameUser">
+				<div class="nameUser">Andreina</div>
+				<div class="lastnameUser">Cota Vidaurre</div>
+			</div>
+			<div class="avatarUser">
+				<div class="backgroundImage">
+					<img src="images/photo4.png">
+					<div class="test1"></div>
+					<div class="test2"></div>
+					<div class="test3"></div>
+				</div>
+			</div>
+			<div class="bannerhead">
+				<h3>Informatic Engineer</h3>
+				<p>I'm a developer who worked in different projects either in sales system, tools development
+					and
+					research. I like challenging working environment that encourages me to improve and learn new
+					and necessary skills.</p>
+			</div>
 
-	 <!------Interest Starts------->
-	 <div id="interest" class="Portfolio">
-		  <div class="Portfolio-section text-center">
-			  <h2><span> </span>INTEREST<span> </span></h2>
-		  </div>
-		  <div class="container">
-	 		<div class="container">
-			   <!--iv class="header-section text-center">
+			<a class="downarrow scroll" href="#about"><span> </span></a>
+		</div>
+		<!------Banner ends-------->
+	</div>
+	<!------Headerbg ends-------->
+	<!------Content starts--------->
+	<div class="content">
+		<!------About starts--------->
+		<div id="about" class="about">
+			<div class="container">
+				<div class="header-section text-center">
+					<h2><span> </span>EXPERIENCE<span> </span></h2>
+				</div>
+				<span>
+					<p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+						lorem quis bibendum auctor,nisi elit consequat ipsum,nec sagittis sem nibh id elit.Duis.</p>
+				</span>
+
+				<div class="years">
+					<h4><b>2018-Present</b></h4>
+					<span>
+						<h4>Research Software Engineer at <b> <a id="linkSemantics"
+									href="http://semantics.bo/">Semantics S.R.L. </a></b></h4>
+					</span>
+					<p><i>Responsible for projects like: SGraphQL (open source Smalltalk GraphQL implementation) and
+							SmallTestSuiteGenerator (test generation tool).</i></p>
+				</div>
+
+				<div class="years">
+					<h4><b>2017-2018</b></h4>
+					<span>
+						<h4>Software Engineer at <b><a href="https://pilandina.com.bo/">PIL Andina S.A. </a></b></h4>
+					</span>
+					<p><i>Part of the group responsible for development, maintenance and support the sales and
+							distribution
+							system.</i></p>
+				</div>
+				<a class="arrow scroll" href="#interest"><span> </span></a>
+			</div>
+		</div>
+		<!------About Ends--------->
+
+		<!------Interest Starts------->
+		<div id="interest" class="Portfolio">
+			<div class="Portfolio-section text-center">
+				<h2><span> </span>INTEREST<span> </span></h2>
+			</div>
+			<div class="container">
+				<div class="container">
+					<!--iv class="header-section text-center">
 				  <h2><span> </span>INTEREST<span> </span></h2>
 				  </div-->
-				 <ul>
-				  <li>Artificial Intelligence</li>
-				  <li>Deep Learning</li>
-				  <li>Machine Learning</li>
-				  <li>Software Engineering</li>
-				  <li>Software Quality</li>
-				  <li>Software Visualization</li>
-            	</ul>
+					<ul>
+						<li>Artificial Intelligence</li>
+						<li>Deep Learning</li>
+						<li>Machine Learning</li>
+						<li>Software Engineering</li>
+						<li>Software Quality</li>
+						<li>Software Visualization</li>
+					</ul>
 
 
-				 <a class="arrow scroll" href="#skills"><span> </span></a>
+					<a class="arrow scroll" href="#skills"><span> </span></a>
+				</div>
 			</div>
-		  </div>
-	 </div>
-	 <!------Interest Ends--------->
-	 
-	<!------SKILLS Starts--------->
-	  <div id="skills" class="skills">
-	  <div class="container">
-	     <div class="skills-grids">
-			  <div class="skill-section text-center">
-				  <h2><span> </span>SKILLS<span> </span></h2>
-			  </div>
-					  <div class="services_grids">
-						  <div id="canvas">
-								<div class="skill-grids text-center">
-										<div class="col-md-3">	
-											<div class="skill-grid">
-												<div class="circle" id="circles-1"></div>									
-												 <h3>JAVA</h3>
-											 </div>								  
-										</div>
-										<div class="col-md-3">	
-											<div class="skill-grid">
-												<div class="circle" id="circles-2"></div>									
-												 <h3>PHARO</h3>
-											 </div>								  
-										</div>
-										<div class="col-md-3">	
-											<div class="skill-grid">
-												<div class="circle" id="circles-3"></div>									
-												 <h3>PYTHON</h3>
-											 </div>								  
-										</div>
-										<div class="col-md-3">	
-											<div class="skill-grid">
-												<div class="circle" id="circles-4"></div>									
-												 <h3>ANDROID</h3>
-											 </div>								  
-										</div>
-										<div class="col-md-3">
-											<div class="skill-grid">
-												<div class="circle" id="circles-5"></div>
-												 <h3>JAVASCRIPT</h3>
-											 </div>
-										</div>
-										<div class="col-md-3">
-											<div class="skill-grid">
-												<div class="circle" id="circles-6"></div>
-												 <h3>DATABASES</h3>
-											 </div>
-										</div>
-										<div class="clearfix"> </div>
-								  </div>
-						   </div>
-					  </div>
+		</div>
+		<!------Interest Ends--------->
+
+		<!------SKILLS Starts--------->
+		<div id="skills" class="skills">
+			<div class="container">
+				<div class="skills-grids">
+					<div class="skill-section text-center">
+						<h2><span> </span>SKILLS<span> </span></h2>
+					</div>
+					<div class="services_grids">
+						<div id="canvas">
+							<div class="skill-grids text-center">
+								<div class="col-md-3">
+									<div class="skill-grid">
+										<div class="circle" id="circles-1"></div>
+										<h3>JAVA</h3>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="skill-grid">
+										<div class="circle" id="circles-2"></div>
+										<h3>PHARO</h3>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="skill-grid">
+										<div class="circle" id="circles-3"></div>
+										<h3>PYTHON</h3>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="skill-grid">
+										<div class="circle" id="circles-4"></div>
+										<h3>ANDROID</h3>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="skill-grid">
+										<div class="circle" id="circles-5"></div>
+										<h3>JAVASCRIPT</h3>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="skill-grid">
+										<div class="circle" id="circles-6"></div>
+										<h3>DATABASES</h3>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+					</div>
 					<!---->
-					 <script type="text/javascript" src="js/circles.js"></script>
-								 <script>
-									var colors = [
-											['#042a3b', '#084d6e'], ['#181115', '#30222A'], ['#181115', '#30222A'], ['#181115', '#30222A']
-										];
-									var percentages = [70, 80, 60, 50, 50, 80];
-									for (var i = 1; i <= 6; i++) {
-										var child = document.getElementById('circles-' + i),
-											percentage = percentages[i-1];
-											
-										Circles.create({
-											id:         child.id,
-											percentage: percentage,
-											radius:     80,
-											width:      15,
-											number:   	percentage,
-											text:       '%',
-											colors:     colors[0]
-										});
-									}
-							
+					<script type="text/javascript" src="js/circles.js"></script>
+					<script>
+						var colors = [
+							['#042a3b', '#084d6e'], ['#181115', '#30222A'], ['#181115', '#30222A'], ['#181115', '#30222A']
+						];
+						var percentages = [70, 80, 60, 50, 50, 80];
+						for (var i = 1; i <= 6; i++) {
+							var child = document.getElementById('circles-' + i),
+								percentage = percentages[i - 1];
+
+							Circles.create({
+								id: child.id,
+								percentage: percentage,
+								radius: 80,
+								width: 15,
+								number: percentage,
+								text: '%',
+								colors: colors[0]
+							});
+						}
+
 					</script>
-					
+
 					<!--/-->
-			 </div>
-		 </div>
-		   <a class="down scroll" href="#port"><span> </span></a>
-	  </div>
-	  </div>
-	 <!------SKILLS Ends--------->
-  </div>
-  <!------Content Ends-------->
-  
-  <!------FOOTER Starts----------->
-  <!--div  id="contact" class="footer">
+				</div>
+			</div>
+			<a class="down scroll" href="#port"><span> </span></a>
+		</div>
+	</div>
+	<!------SKILLS Ends--------->
+	</div>
+	<!------Content Ends-------->
+
+	<!------FOOTER Starts----------->
+	<!--div  id="contact" class="footer">
       <div class="container">
 	  
 		   <div class="contact-section text-center">
@@ -258,8 +265,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	 <a class="up scroll" href="#top-top"><span> </span></a>
 	  
  </div-->
- 
- </body>
- </html>
- 
-   
+
+</body>
+
+</html>

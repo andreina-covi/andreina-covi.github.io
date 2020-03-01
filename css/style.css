@@ -5,105 +5,199 @@
 	License URL: http://creativecommons.org/licenses/by/3.0/
 ---*/
 html,body{
-	font-family: 'Lato', sans-serif;
+	/* font-family: 'Lato', sans-serif; */
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
-.clear{
-	clear:both;
-}
+
 body a{
 	transition:0.5s all;
 	-o-transition:0.5s all;
 	-ms-transition:0.5s all;
 	-o-transition:0.5s all;
 }
+
 body input[type="text"],body input[type="submit"],body textarea,body input[type="button"]{
 	-webkit-appearance:none;
 }
-/*------ HEADERBG STARTS---------*/
-.headerbg {
-	background:rgba(0,0,0, 0.94);
-	min-height:896px;
-	/*height: 100%;
-	width:100%;*/
-	background-size:cover;
-}
-/*------ HEADER STARTS---------*/
-.header{
-	background:rgba(0, 0, 0, 0.24);
-}
-/*------ CONTAINER STARTS---------*/
-.container{
-	width:70%;
-}
-/*------ LOGO STARTS---------*/
-.logo{
-	float:left;
-	margin:0.5em 0 0.5em 0em;
-}
-.logo a{
-	color:#c5d0de;
-	font-size:2.5em;
-}
-.logo a:hover{
-	color:#B5A9B7;
-    text-decoration:none;
-}
-/*------ LOGO ENDS---------*/
+
 /*------ TOPNAV STARTS---------*/
-.nav{
+.wrap-navigator {
+	display: flex;
+	justify-content: space-between;
+	height: 64px;
+	background-color: #262626;
+}
+
+.wrap-navigator .logo {
+	display: flex;
+	align-items: center;
+	margin-left: 35px;
+	font-size: 24px;
+}
+
+.wrap-navigator .logo a {
+	color: #c5d0de;
+	text-decoration: none;
+}
+
+.wrap-navigator .logo a:hover {
+	color: gray;
+}
+
+.wrap-navigator .nav{
 	float:right;
 	font-size: 1.5em;
+	display: flex;
+	align-items: center;
 }
-.nav ul li{
+
+.wrap-navigator .nav ul {
+	margin-bottom: 0;
+	display: flex;
+	align-items: flex-end;
+}
+
+.wrap-navigator .nav ul li{
 	display:inline-block;
-	margin:1em 1.5em 0 0;
+	margin-right: 35px;
+	padding-top: 5px;
 }
-.nav ul li a{
+
+.wrap-navigator .nav ul li a{
 	color:#c5d0de;
 }
-.nav ul li a:hover{
+
+.wrap-navigator .nav ul li a:hover{
 	color:gray;
 	text-decoration:none;
 }
-/*------ TOPNAV ENDS---------*/
-/*------ HEADER ENDS---------*/
-/*------ BANNER STARTS---------*/
-.banner{
-  	/*position: absolute;*/
-	width: 86%;
+
+/*------ HEADERBG STARTS---------*/
+.headerbg {
+	background:black;
+	height: 650px;
 }
-.banner-info{
-	width: 70%;
-	float: right;
+
+.headerbg .container {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	position: relative;
 }
-.bannerlogo{
-	float: right;
-	width:20%;
-	margin-top: 0.8em;
+
+.headerbg .container .completeNameUser {
+	margin-top: 55px;
+	margin-left: 55px;
+	display: flex;
+	font-size: 20px;
 }
-.bannerhead{
-	float:left;
+
+.headerbg .container .completeNameUser .nameUser {
+	margin-right: 7px;
+	color: rgb(161, 159, 159);
 }
-.bannerhead h2{
-	color: #b7bbc5;
-	margin:0;
-	padding:0;
+
+.headerbg .container .completeNameUser .lastnameUser {
+	color: white;
 }
-.bannerhead h2 span{
-	color:#d9edf7;
-	font-weight:bolder;
-	font-size:2em;
+
+.headerbg .container .avatarUser {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	margin-left: 25%;
+	bottom: 0px;
 }
-.bannerhead h3{
-	color:#9c9999;
-	font-weight:bolder;
-    font-size:3em;
+
+.headerbg .container .avatarUser .backgroundImage {
+	position: relative;
+	width: 600px;
+	height: 500px;
+	background: linear-gradient(70deg, black, white);;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
 }
-.bannerhead p{
-    color:#d9ecf7;
-    margin-block-start: 2em;
-    font-size: 1.3em;
+
+.headerbg .container .avatarUser .backgroundImage img {
+	bottom: 0;
+	display: flex;
+	width: 500px;
+	height: 500px;
 }
+
+.headerbg .container .avatarUser .test1 {
+	position: absolute;
+	z-index: 1000;
+	left: 0;
+	border-right: 60px solid transparent;
+	border-top: 250px solid black;
+	border-left: 60px solid black;
+	border-bottom: 250px solid transparent;
+}
+
+
+.headerbg .container .avatarUser .test2 {
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 1000;
+	border-right: 300px solid black;
+	border-top: 60px solid black;
+	border-left: 300px solid transparent;
+	border-bottom: 60px solid transparent;
+}
+
+.headerbg .container .avatarUser .test3 {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 1000;
+	border-right: 100px solid black;
+	border-top: 250px solid transparent;
+	border-left: 100px solid transparent;
+	border-bottom: 250px solid black;
+}
+
+.headerbg .container .bannerhead {
+	position: absolute;
+	z-index: 1001;
+	padding-right: 5%;
+	height: 50%;
+	width: 40%;
+	top: 50%;
+	display: block;
+	left: 60%;
+}
+
+.headerbg .container .bannerhead h3 {
+	color: #4beaff;
+	font-weight: bold;
+}
+
+.headerbg .container .bannerhead p {
+	color: white;
+	font-size: 18px;
+}
+
+.headerbg .container a.downarrow.scroll{
+	position: absolute !important;
+	width: 100% !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	bottom: 0;
+	top: 89%;
+	left: 50%;
+}
+/*------ HEADER STARTS---------*/
+.header{
+	height: 64px;
+	background:rgba(0, 0, 0, 0.24);
+}
+
 a.downarrow  span{
  	height:48px;
     width:48px;
@@ -115,15 +209,7 @@ a.downarrow{
   	margin: 13em 27em 0;
 	left: 17%;
 }
-.bannerhead{
-	position: relative;
-	width: 70%;
-}
-.banner-info{
-	position: relative;
-	top: 15em;
-	right: 20%;
-}
+
 /*------ About STARTS---------*/
 .about{
 	color:white;
@@ -194,7 +280,6 @@ a.arrow{
 }
 /*------Skill-Section STARTS---------*/
 .skills{
-	/*min-height:750px;*/
 	background:#191d20;
 	position:relative;
 	text-align: center;
@@ -237,15 +322,12 @@ a.arrow{
 	display:inline-block;
 }
 a.down{
-	/*padding:4em 0 0 2em;*/
 	margin: 2em 0 4em 0;
 	display:inline-block;
-	/*position: relative;*/
 }
 /*------Skill-Section Ends---------*/
 /*------Portfolio-Section STARTS---------*/
 .Portfolio{
-	/*min-height:600px;*/
 	background:#ffffff;
 	text-align:center;
 }
@@ -433,9 +515,6 @@ p.copy-right a{
 	}
 }
 @media (max-width:1024px){
-	.container {
-		width:80%;
-	}
  	.years p {
 		width: 80%;
 	}
@@ -445,14 +524,8 @@ p.copy-right a{
 	.footer-left p {
 		width: 90%;
 	}
-	.banner-info {
-		width: 80%;
-	}
 	.footer-right input[type="text"], .footer-right textarea {
 		width: 87%;
-	}
-	.headerbg {
-		min-height: 591px;
 	}
 	.banner-info {
 		top: 110px;
@@ -469,9 +542,6 @@ p.copy-right a{
 	}
 }
 @media (max-width:768px){
-	.container {
-		width:80%;
-	}
  	.years p {
 		width: 80%;
 	}
@@ -481,19 +551,8 @@ p.copy-right a{
 	.footer-left p {
 		width: 90%;
 	}
-	.banner-info {
-		width: 80%;
-	}
 	.footer-right input[type="text"], .footer-right textarea {
 		width: 100%;
-	}
-	.headerbg {
-		min-height:500px;
-	}
-	.banner-info {
-		top: 112px;
-		width: 100%;
-		left: 2%;
 	}
 	a.downarrow {
 		top: 241px;
@@ -504,12 +563,6 @@ p.copy-right a{
 	}
 	.header-section h2 {
 		padding: 1.2em 0 0.8em 0;
-	}
-	.bannerhead {
-		width: 84%;
-	}
-	.banner {
-		width: 100%;
 	}
 	.years h4, .years span h4 {
 		margin: 0.5em 0 0 0;
@@ -551,9 +604,6 @@ p.copy-right a{
 	}
 }
 @media (max-width:640px){
-	.container {
-		width:80%;
-	}
  	.years p {
 		width: 100%;
 	}
@@ -563,19 +613,8 @@ p.copy-right a{
 	.footer-left p {
 		width: 90%;
 	}
-	.banner-info {
-		width: 80%;
-	}
 	.footer-right input[type="text"], .footer-right textarea {
 		width: 100%;
-	}
-	.headerbg {
-		min-height:500px;
-	}
-	.banner-info {
-		top: 112px;
-		width: 100%;
-		left: 2%;
 	}
 	a.downarrow {
 		top: 241px;
@@ -586,12 +625,6 @@ p.copy-right a{
 	}
 	.header-section h2 {
 		padding: 1.2em 0 0.8em 0;
-	}
-	.bannerhead {
-		width: 84%;
-	}
-	.banner {
-		width: 100%;
 	}
 	.years h4, .years span h4 {
 		margin: 0.5em 0 0 0;
@@ -634,25 +667,40 @@ p.copy-right a{
 	.about span p {
 		margin-bottom: 2em;
 	}
-	.nav ul{
-		margin:0;
-		padding:0;
+	.wrap-navigator {
+		display: block;
+		height: 128px;
 	}
-	.nav ul li {
-		margin: 1.2em 0.5em;
+
+	.wrap-navigator .logo {
+		width: 100%;
+		height: 64px;
+		margin: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: white;
 	}
-	.logo {
-		margin: 0.3em 0 0.5em 0em;
+	
+	.wrap-navigator .logo a {
+		color: gray;
 	}
+
+	.wrap-navigator .nav {
+		width: 100%;
+		height: 64px;
+		margin: 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
 	.bannerhead h3 {
 		font-size: 2em;
 		margin: 0.3em 0 0.3em;
 	}
 }
 @media (max-width:480px){
-	.container {
-		width:90%;
-	}
  	.years p {
 		width: 100%;
 		line-height: 1.6em;
@@ -665,20 +713,8 @@ p.copy-right a{
 		width: 100%;
 		margin: 0.8em 0 0 0;
 	}
-	.banner-info {
-		width: 80%;
-	}
 	.footer-right input[type="text"], .footer-right textarea {
 		width: 100%;
-	}
-	.headerbg {
-		min-height: 457px;
-	}
-	.banner-info {
-		top: 36px;
-		width: 100%;
-		left: 0%;
-		text-align: center;
 	}
 	a.downarrow {
 		top: 201px;
@@ -691,12 +727,6 @@ p.copy-right a{
 		padding: 0.8em 0 0.5em 0;
 		line-height:1.5em;
 	}
-	.bannerhead {
-		width: 100%;
-	}
-	.banner {
-		width: 100%;
-	}
 	.years h4, .years span h4 {
 		margin: 0.5em 0 0 0;
 	}
@@ -707,9 +737,6 @@ p.copy-right a{
 		padding: 1em 0;
 	}
 	a.down {
-		/*padding: 0;
-		position: absolute;
-		left: 45%;*/
 		margin: 1em 0 2em 0;
 	}
 	.skills {
@@ -753,18 +780,9 @@ p.copy-right a{
 		float:none;
 		text-align:center;
 	}
-	.bannerhead h3 {
-		font-size: 1.6em;
-		margin: 0.3em 0 0.3em;
-	}
 	.nav {
 		float: none;
 		text-align:center;
-	}
-	.bannerlogo {
-		float: none;
-		margin-top: 0em;
-		text-align: center;
 	}
 	.skill-grid h3 {
 		font-size: 1.5em;
@@ -775,12 +793,6 @@ p.copy-right a{
 	}
 }
 @media (max-width:320px){
-	.container {
-		width:90%;
-	}
-	.header div.container,.banner div.container{
-		padding:0;
-	}
  	.years p {
 		width: 100%;
 		line-height: 1.6em;
@@ -794,21 +806,9 @@ p.copy-right a{
 		width: 100%;
 		margin: 0.8em 0 0 0;
 	}
-	.banner-info {
-		width: 80%;
-	}
 	.footer-right input[type="text"], .footer-right textarea {
 		width: 100%;
 		padding: 0.8em;
-	}
-	.headerbg {
-		min-height: 409px;
-	}
-	.banner-info {
-		top: 36px;
-		width: 100%;
-		left: 0%;
-		text-align: center;
 	}
 	a.downarrow {
 		top: 171px;
@@ -825,12 +825,6 @@ p.copy-right a{
 	.about div.container{
 		padding:0;
 	} 
-	.bannerhead {
-		width: 100%;
-	}
-	.banner {
-		width: 100%;
-	}
 	.years h4, .years span h4 {
 		margin: 0.5em 0 0 0;
 	}
@@ -888,18 +882,9 @@ p.copy-right a{
 		float:none;
 		text-align:center;
 	}
-	.bannerhead h3 {
-		font-size: 1.4em;
-		margin: 0.3em 0 0.3em;
-	}
 	.nav {
 		float: none;
 		text-align:center;
-	}
-	.bannerlogo {
-		float: none;
-		margin-top: 0em;
-		text-align: center;
 	}
 	.skill-grid h3 {
 		font-size: 1.5em;
@@ -907,9 +892,6 @@ p.copy-right a{
 	.up {
 		bottom: 1%;
 		left: 47%;
-	}
-	.bannerhead h2 {
-		font-size: 1.8em;
 	}
 	.Portfolio-section h2 {
 		font-size: 1.6em;
