@@ -1,0 +1,39 @@
+$font-color: aliceblue !important;
+
+.container {
+    background: #15182b;
+}
+
+div > nav {
+    background: transparent;
+}
+
+.nav-link {
+    color: $font-color;
+}
+
+.nav-link.active{
+    background: transparent !important;
+    color: aliceblue !important;
+    font-weight: bold;
+    font-size: large;
+}
+
+.resume {
+    color: aliceblue !important;
+    font-size: xx-large;
+}
+
+.btn.btn-primary {
+    background: #475B6D;
+}
+
+// .nav-link {
+//     .firs-class{
+
+//     }
+
+//     .secon-class{
+
+//     }
+// }
