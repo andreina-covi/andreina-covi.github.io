@@ -74,7 +74,8 @@ button i, a i {
 }
 
 .content {
-  height: calc(100% - 44px);
+  height: 100%;
+  padding-top: 5%;
 }
 
 /* Home */
@@ -95,12 +96,20 @@ button i, a i {
 
 /* nav */
 
-.nav {
-  background: rgb(132 148 170 / 32%) !important;
+.navbar {
+  background: #15182b !important;
+  /* background: rgb(132 148 170 / 32%) !important; */
+  /* margin-top: 2%; */
+  margin-right: 2%;
+  height: 8%;
 }
 
 .nav-link {
   font-size: large;
+}
+
+.navbar-collapse {
+  background: #15182b;
 }
 
 .nav-link.active {
@@ -112,6 +121,10 @@ button i, a i {
 .row nav {
   border-bottom: 1px solid aliceblue;
 }
+
+/* .navbar-toggler-icon{
+  background: aliceblue;
+} */
 
 /* 
     Name block
@@ -782,6 +795,13 @@ button i, a i {
     left: 53.5%;
     top: 53.5%;
   }
+  .portfolio-info .large-title {
+    font-size: 5vw;
+  }
+
+  .content {
+    padding-top: 13%;
+  }
 }
 
 @media (max-width: 800px) {
@@ -840,5 +860,9 @@ button i, a i {
   }
   .portfolio-info .large-title {
     font-size: 5vw;
+  }
+  .content {
+    /* height: calc(100% - 44px); */
+    padding-top: 13%;
   }
 }
